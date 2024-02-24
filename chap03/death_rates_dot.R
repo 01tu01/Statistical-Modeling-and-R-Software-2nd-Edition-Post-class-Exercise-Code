@@ -1,0 +1,5 @@
+win.graph(width = 8, height = 6)
+par(mai=c(0.5, 0.9, 0.6, 0.1))
+dotchart(VADeaths, main = "Death Rates in Virginia - 1940")
+dotchart(t(VADeaths), main = "Death Rates in Virginia - 1940")
+savePlot("death_rates_2", type = "eps")
