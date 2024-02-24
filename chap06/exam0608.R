@@ -1,0 +1,5 @@
+rt <- read.table("exam0606.data")
+lm.sol <- lm(Y ~ 1 + X1 + X2, data = rt)
+new <- data.frame(X1 = 80, X2 = 40)
+predict(lm.sol, new, interval = "prediction") 
+predict(lm.sol, new, interval = "confidence") 
