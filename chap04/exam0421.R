@@ -1,0 +1,5 @@
+source("interval_z2.R")
+set.seed(123456)
+X <- rnorm(100, 5.32, 2.18)
+Y <- rnorm(100, 5.76, 1.76)
+interval_z2(X, Y, sigma = c(2.18, 1.76))
